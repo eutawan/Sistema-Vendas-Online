@@ -7,7 +7,7 @@ import java.util.List;
 
 public class ClienteDAO {
 
-    public void salvarProduto(Cliente cliente){
+    public void salvarCliente(Cliente cliente){
         EntityManager em = JPAUtil.getEntityManager();
         em.getTransaction().begin();
         em.persist(cliente);
