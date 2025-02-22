@@ -12,5 +12,12 @@ public class Main {
         produto1.setNome("Notebook");
         produtoDAO.salvarProduto(produto1);
 
+        ClienteDAO clienteDAO = new ClienteDAO();
+        Cliente cliente1 = new Cliente();
+        cliente1.setNome("Tawan Carvalho");
+        cliente1.setEmail("tawan@gmail.com")
+        cliente1.setEndereco("Rua Francisco Ramalho Sobrinho")
+        clienteDAO.salvarCliente(cliente1);
+
     }
 }
